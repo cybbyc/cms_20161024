@@ -1,0 +1,74 @@
+/*
+    该页面为自定义的css样式内容
+
+*/
+
+
+/*
+    一下是普通用户详细内容页面自定义的样式
+
+*/
+#cyb_div{
+    min-height: 400px;
+    /*border:1px solid gainsboro;*/
+}
+
+#cyb_div img{
+    height: 130px;
+    width: 100px;
+    padding: 3px;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 0 10px 10px 0;
+}
+
+#cyb_div dl{
+    display: inline-block;
+    vertical-align: top;
+    height:130px;
+    /*border:1px solid chartreuse;*/
+}
+#cyb_div dl dt{
+    height:40px;
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight:bold;
+}
+#cyb_div dl dt input[type='button']{
+    background-color: green;
+    border:0;
+    cursor: pointer;
+    color:white;
+}
+#cyb_div dl dd{
+    height: 30px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+#cyb_div .classify{
+    display: inline-block;
+    vertical-align: top;
+    /*border:1px solid saddlebrown;*/
+}
+#cyb_div .classify label{
+    height:30px;
+    line-height: 30px;
+}
+#cyb_div .classify select{
+    width: 50px;
+}
+#cyb_div h3{
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: grey;
+    border-bottom: 1px solid gainsboro;
+    height:18px;
+    margin-bottom: 10px;
+}
+#cyb_div p{
+    color:darkgrey;
+    font-size: 15px;
+    text-indent: 2em;
+    padding: 0 0 10px;
+    line-height: 25px;
+}

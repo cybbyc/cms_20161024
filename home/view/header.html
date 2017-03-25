@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>集团网站首页</title>
+    <link rel="stylesheet" href="resources/home/css/base.css" />
+    <link rel="stylesheet" href="resources/home/css/style.css" />
+    <script src="resources/home/js/jquery.min-2.1.4.js" type="text/javascript"></script>
+    <script src="resources/home/js/js.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+<div id="header_wrapper">
+    <header>
+        <div class="contenter">
+            <div class="logo">
+                <a href="index.php?c=index"><img src="resources/home/images/logo.jpg"></a>
+            </div>
+            <div class="search">
+                <form action="index.php?c=index">
+                    <input type="text" placeholder="输入关键字搜索" /><input type="submit" value="搜索" />
+                </form>
+            </div>
+        </div>
+        <div id="nav">
+            <nav class="contenter">
+                <input type="hidden" value="<?php echo C;?>" id="c">
+                <ul id="nav">
+                    <li><a href="index.php?c=index">集团首页</a></li><li>
+                    <a href="index.php?c=piclist">产品列表</a></li><li>
+                    <a href="index.php?c=newslist">新闻列表</a></li><li>
+                    <a href="index.php?c=content">内容信息</a></li><li>
+                    <a href="index.php?c=about">关于我们</a></li><li>
+                    <a href="index.php?c=register">用户注册</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</div>

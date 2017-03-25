@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<nav>
+    <!--新闻管理-->
+    <first a="news" n="1">
+        <name>新闻管理</name>
+        <action c="index" m="1">
+            <name>新闻列表</name>
+            <url><![CDATA[admin.php?a=news&c=index]]></url>
+        </action>
+        <action c="add" m="2">
+            <name>发表新闻</name>
+            <url><![CDATA[admin.php?a=news&c=add]]></url>
+        </action>
+    </first>
+    <!--文件上传管理-->
+    <first a="image" n="2">
+        <name>图片管理</name>
+        <action c="index" m="1">
+            <name>图片列表</name>
+            <url><![CDATA[admin.php?a=image&c=index]]></url>
+        </action>
+        <action c="add" m="2">
+            <name>图片上传</name>
+            <url><![CDATA[admin.php?a=image&c=add]]></url>
+        </action>
+    </first>
+    <!--权限管理-->
+    <first a="manage" n="3">
+        <name>权限管理</name>
+        <action c="index" m="1">
+            <name>管理员列表</name>
+            <url><![CDATA[admin.php?a=manage&c=index]]></url>
+        </action>
+        <action c="add" m="2">
+            <name>添加管理员</name>
+            <url><![CDATA[admin.php?a=manage&c=add]]></url>
+        </action>
+    </first>
+    <!--新闻分类-->
+    <first a="classify" n="4">
+        <name>新闻分类管理</name>
+        <action c="index" m="1">
+            <name>分类列表</name>
+            <url><![CDATA[admin.php?a=classify&c=index]]></url>
+        </action>
+        <action c="add" m="2">
+            <name>添加分类</name>
+            <url><![CDATA[admin.php?a=classify&c=add]]></url>
+        </action>
+    </first>
+    <!--用户管理-->
+    <first a="user" n="5">
+        <name>用户管理</name>
+        <action c="index" m="1">
+            <name>用户列表</name>
+            <url><![CDATA[admin.php?a=user&c=index]]></url>
+        </action>
+        <action c="add" m="2">
+            <name>用户添加(用户前端注册)</name>
+            <!--<url><![CDATA[admin.php?a=user&c=add]]></url>-->
+            <url><![CDATA[#]]></url>
+        </action>
+    </first>
+</nav>

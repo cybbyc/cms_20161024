@@ -1,0 +1,91 @@
+/*
+ * 本页面为初始化页面的 css样式和复用css样式
+ * 
+ * 
+ * */
+
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+
+/*控制上下间隙样式*/
+.clear_1{width: 100%; height: 5px; clear: both;}
+.clear_2{width: 100%; height: 10px; clear: both;}
+.clear_3{width: 100%; height: 15px; clear: both;}
+.clear_4{width: 100%; height: 20px; clear: both;}
+.clear_5{width: 100%; height: 25px; clear: both;}
+
+body{
+	background-color: #f3f3f3;
+	font-family:"";
+}
+/*标题栏复用样式*/
+.title_h3{
+	height: 45px;
+	background: url(../images/title_h3_bg.jpg);
+	line-height: 45px;
+	padding-left: 10px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	
+}
+.title_h3 a{
+	color: #444444;
+}
+
+
+/*#main_wrapper{
+	margin-top: 23px;
+}
+#main_wrapper article{
+	width: 630px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#main_wrapper aside{
+	margin-left: 20px;
+	width: 351px;
+	display: inline-block;
+	vertical-align: top;
+}*/
+
+/*百度分享按钮插件*/
+.bdsharebuttonbox{
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+/*元素后面添加的推荐、精品、热门、赞等*/
+.hot:after{
+	content: url(../images/hot_1.gif);
+	margin-left: 10px;
+}
+.jing:after{
+	content: url(../images/digest_3.gif);
+	margin-left: 10px;
+}
+.tui:after{
+	content: url(../images/recommend_1.gif);
+	margin-left: 10px;
+}
+.zan:after{
+	content: url(../images/agree.gif);
+	margin-left: 10px;
+}
+
+
+
+/*百度地图引用样式*/
+
+
+.iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+.iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}

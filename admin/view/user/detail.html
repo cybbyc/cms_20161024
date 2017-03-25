@@ -1,0 +1,85 @@
+        <div class="content-box">
+            <!-- Start Content Box -->
+            <div class="content-box-header">
+                <h3>Content box</h3>
+                <ul class="content-box-tabs">
+                    <li><a href="#tab1" class="default-tab">Table</a></li>
+                    <!-- href must be unique and match the id of target div -->
+
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <!-- End .content-box-header -->
+            <div class="content-box-content">
+                <div class="tab-content default-tab" id="tab1">
+                    <!-- This is the target div. id must match the href of this div's tab -->
+                    <!--<div class="notification attention png_bg"> <a href="#" class="close"><img src="resources/images/icons/cross_grey_small.png" title="Close this notification" alt="close" /></a>-->
+                        <!--<div> This is a Content Box. You can put whatever you want in it. By the way, you can close this notification with the top-right cross. </div>-->
+                    <!--</div>-->
+                    <div id="cyb_div">
+                        <input type="hidden" value="<?php echo $data['user_id']?>" name="id">
+                        <input type="hidden" value="<?php echo $data['user_name']?>" name="username">
+                        <img src="<?php echo $data['user_img']?>">
+                        <dl>
+                            <dt>用户名：<span style="color:green;"><?php echo $data['user_name']?></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="升级为管理员"></dt>
+                            <dd>email：<span><?php echo $data['user_email']?></span></dd>
+                            <dd>phoneNumber：<span><?php echo $data['user_phone']?></span></dd>
+                        </dl>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="classify">
+                            <label>基本权限级别：</label>
+                            <select id="classify">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                            </select>
+                        </div>
+
+                        <h3>用户描述</h3>
+                        <p>
+                            <?php echo $data['user_des']?>
+                        </p>
+                        <h3>用户动态</h3>
+                        <p><span>用户注册时间：</span><?php echo $data['create_time']?></p>
+                        <p><span>最后一次登录：</span><?php echo $data['last_login']?></p>
+                    </div>
+
+                </div>
+                <!-- End #tab1 -->
+            </div>
+            <!-- End .content-box-content -->
+        </div>
+        <!-- End .content-box -->
+    <!--                   自定义js函数库                     -->
+    <script type="text/javascript" src="resources/scripts/cyb_f.js"></script>
+    <script>
+        $(function(){
+//                请求地址
+            var url = "admin.php?a=user&c=upgrade";
+            $(":button").click(function(){
+
+//                    获取当前用户的id
+                var id = $("input:hidden[name='id']").val();
+//                获取当前用户的用户名
+                var username = $("input:hidden[name='username']").val();
+//                获取赋予的权限的级别
+                var classify = $("#classify").val();
+
+                $.ajax({
+                    type: "get",
+                    data:{"id":id,"classify":classify},
+                    url: url,
+                    dataType: "json",
+                    success: function (msg) {
+                        if(msg == 0){
+                            alert("该用户名已有管理员在使用，无法升级为管理员！");
+                        }else{
+                            alert(username+" 已升级为管理员");
+                        }
+
+                    }
+                });
+            });
+        });
+    </script>

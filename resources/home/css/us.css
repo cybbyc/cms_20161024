@@ -1,0 +1,199 @@
+/*关于我们页面的样式*/
+
+#main_wrapper .us{
+	height: 350px;
+	width: 100%;
+}
+
+#main_wrapper .us header{
+	height: 45px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+#main_wrapper .us header h3{
+	height: 45px;
+	background: url(../images/title_h3_bg.jpg);
+	line-height: 45px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+#main_wrapper .us header h3 a{
+	color: #444444;
+}
+#main_wrapper .us .left{
+	display: inline-block;
+	vertical-align: top;
+	width: 45%;
+	height: 295px;
+}
+#main_wrapper .us .left p{
+	text-indent: 2em;
+	line-height: 27px;
+	letter-spacing: 1px;
+	margin: 0px;
+	padding: 0px;
+	height: 295px;
+	text-align: justify;
+	padding: 0 5%;
+	width: 90%;
+	color: #444444;
+	overflow: hidden;
+}
+#main_wrapper .us .right{
+	display: inline-block;
+	width: 55%;
+	height: 295px;
+}
+#main_wrapper .us .right video{
+	background-color: gainsboro;
+	height: 100%;
+	width: 100%;
+	border: none;
+}
+#main_wrapper .product{
+	min-height: 180px;
+	width: 100%;
+	/*background: green;*/
+	border-top: 1px solid gainsboro;
+	border-bottom: 1px solid gainsboro;
+	margin: 30px 0;
+	padding: 40px 0;
+	
+}
+#main_wrapper .product h4{
+	display: inline-block;
+	width:10%;
+	height: 80px;
+	background-color: blue;
+	color: white;
+	border-radius: 40px;	
+	line-height: 80px;
+	text-align: center;
+	margin-top:40px;
+	cursor: pointer;
+	margin-right: 7.5%;
+}
+#main_wrapper .product h4.last{
+	margin-right: 0px;
+	color: red;
+}
+#main_wrapper .product h4:hover{
+	margin-right: 0px;
+}
+
+#main_wrapper .product p{
+	
+}
+
+
+#main_wrapper .dress{
+	height: 340px;
+	width: 100%;
+}
+#main_wrapper .dress article{
+	width: 43%;
+	display: inline-block;
+	height: 100%;
+	background-color:white;
+	vertical-align: top;
+	margin-right: 2%;
+	
+}
+#main_wrapper .dress aside{
+	width: 55%;
+	display: inline-block;
+	height: 100%;
+	/*background-color:white;*/
+	margin: 0;
+}
+#main_wrapper .dress aside h3{
+	height: 45px;
+	background: url(../images/title_h3_bg.jpg);
+	line-height: 45px;
+	padding-left: 10px;
+	font-size: 16px;
+}
+#main_wrapper .dress aside a{
+	color: #444444;
+}
+#main_wrapper .dress aside p{
+	line-height: 40px;
+}
+#main_wrapper .dress aside p span{
+	text-align: right;
+	display: inline-block;
+	width: 30%;
+	font-weight: bold;
+	margin-right: 5%;
+}
+/*end of 关于我们页面的样式*/
+
+
+/*用户注册页面的css样式*/
+#main_wrapper .register{
+	width: 65%;
+	height: 450px;
+	display: inline-block;
+}
+#main_wrapper .register form{
+	margin-top: 50px;
+	margin-left:5%;
+}
+#main_wrapper .register form label{
+	width: 16%;
+	display: inline-block;
+	text-align:right;
+	height: 30px;
+	line-height: 30px;
+	letter-spacing: 3px;
+}
+#main_wrapper .register form input{
+	width: 30%;
+	height: 28px;
+    border:1px solid #efefef;
+}
+#main_wrapper .register form span{
+    font-size: 12px;
+}
+#main_wrapper .register form input[type="radio"]{
+	width: 5%;
+	vertical-align: middle;
+}
+#main_wrapper .register form input[type="submit"],#main_wrapper .register form input[type="reset"]{
+    width: 18%;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#main_wrapper .register form input[type="submit"]:hover,#main_wrapper .register form input[type="reset"]:hover{
+    background-color: #008CE3;
+    color: #ffffff;
+}
+#main_wrapper .touxiang{
+	width: 33%;
+	height: 450px;
+	display: inline-block;
+	margin: 0px;
+	border-left: 1px solid gray;
+}
+#main_wrapper .touxiang img:first-child{
+	margin: 20px auto;
+	width: 216px;
+	height: 216px;
+	padding: 2px;
+	border-radius: 110px;
+	display: block;
+	border:1px solid darkgray;
+	line-height: 216px;
+	text-align: center;
+}
+#main_wrapper .touxiang img:last-child{
+	width: 146px;
+	height: 146px;
+	padding: 2px;
+	margin: 10px auto;
+	display: block;
+	border-radius: 75px;
+	border:1px solid gray;
+	line-height: 146px;
+	text-align: center;
+}

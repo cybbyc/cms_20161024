@@ -1,0 +1,1040 @@
+
+/*
+ *
+ * 下面的样式为屏幕宽度大于650以上的css
+ *  
+ * */
+
+@media only screen and (min-width:650px ) {
+
+.contenter{
+	margin: 0px auto;
+	width: 98%;
+	padding: 0 1%;
+	max-width: 1001px;
+}
+.contenter .logo {
+	display: inline-block;
+	vertical-align: middle;
+	width: 55%;
+}
+.contenter .logo img{
+	width: 100%;
+}
+.contenter .search{
+	display: inline-block;
+	width: 43%;
+	text-align: right;
+}
+.contenter .search input[type="text"] {
+   	height: 40px;
+    width: 70%;
+    font-size: 20px;
+    padding-left: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid gainsboro;
+    vertical-align: middle;
+    font-family: "微软雅黑";
+}
+.contenter .search input[type="text"]:focus{
+	background-color: #fff;
+}
+.contenter .search input[type="submit"]{
+	height: 42px;
+	background-color: #3598db;
+	border: 1px solid #3598db;
+	font-size: 20px;
+	padding:0 5px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+
+#nav{
+	background-color: #3598db;
+	height: 60px;
+}
+#nav nav li{
+	display: inline-block;
+	line-height: 60px;
+	font-size: 16px;
+	padding: 0 10px;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+	text-align: center;
+}
+#nav nav li.current,#nav nav li:hover{
+	background-color: #2f89c5;
+}
+#nav nav li a{
+	color: white;
+	display: block;
+}
+
+#main_wrapper{
+	margin-top: 23px;
+}
+#main_wrapper article{
+	display: inline-block;
+	vertical-align: top;
+	width: 62%;
+}
+
+#main_wrapper aside{
+	display: inline-block;
+	vertical-align: top;
+	width: 36%;
+	margin-left: 2%;
+}
+
+
+/*轮播图样式*/
+#lunbotu{
+	width: 100%;
+	box-shadow: 5px 5px 15px gray;
+}
+#lunbotu #tab { 
+	overflow:hidden; 
+	width:100%; 
+	height:258px; 
+	position:relative;
+	/*float:left;*/
+}
+#lunbotu #tab img{
+	width: 100%;
+	height: 318px;
+}
+#lunbotu #tab h1{
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	bottom: 0px;
+	line-height: 45px;
+	background-color: black;
+	font-weight: lighter;
+	font-size: 14px;
+	color: white;
+	opacity: 0.75;
+}
+#lunbotu #tab h1 p{
+	float:left;
+	margin-left: 43px;
+	font-weight: bold;
+	font-size: 16px;
+}
+#lunbotu #tab h1 ul{
+	float: right;
+	margin-top: 10px;
+	margin-right: 43px;
+}
+#lunbotu #tab ul li{
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	float: left;
+	background: url(../images/silde-nav.png) no-repeat;
+	color: white;
+	text-align: center;
+	line-height: 24px;	
+	margin-right: 2px;
+}
+
+#lunbotu #tab .li{
+	background: url(../images/silde-nav.png) 0 -24px no-repeat;
+	color: white;
+	text-align: center;
+	line-height: 24px;	
+}
+#lunbotu #tab .left{
+	width: 43px;
+	height: 273px;
+	line-height: 318px;
+	/*border: 1px solid ghostwhite;*/
+	background-color:black;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	opacity: 0.75;
+	font-size: 20px;
+	cursor: pointer;
+	color:#CCC;
+	text-align: center;
+}
+#lunbotu #tab .right{
+	width: 43px;
+	height: 273px;
+	line-height: 318px;
+	/*border: 1px solid ghostwhite;*/
+	background-color:black;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	opacity:0.75;
+	font-size: 20px;
+	text-align:right;
+	cursor: pointer;
+	color:#CCC;
+	text-align: center;
+}
+/*end of 轮播图样式*/
+
+
+/*新闻列表*/
+#xinwen{
+	margin-top: 20px;
+}
+#xinwen ul li{
+	margin-bottom: 10px;
+	width: 100%;
+	height: 133px;
+}
+#xinwen ul li a.img{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+#xinwen ul li a.img img{
+/*	width: 314px;*/
+	width: 100%;
+	height: 133px;
+}
+#xinwen ul li a.ms{
+	display: inline-block;
+	/*width: 295px;*/
+	width: 45%;
+	background: #3598db;
+	height: 100%;
+	padding-left: 5%;
+	color: white;
+	position: relative;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#xinwen ul li a.ms:hover{
+	background-color:cornflowerblue;
+}
+#xinwen ul li a.ms .sanjiao{
+	width: 25px;
+	height: 25px;
+	background-color:#3598db;
+	position: absolute;
+	left: -12px;
+	top: 16px;
+	/*兼容性设置*/
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+	
+}
+#xinwen ul li a.ms:hover .sanjiao{
+	background-color:cornflowerblue;
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#xinwen ul li a.ms h3{
+	height: 35px;
+	border-bottom: 1px solid #c7c3c4;
+	margin-bottom: 10px;
+	line-height: 35px;
+	font-size: 16px;
+	overflow: hidden;
+}
+#xinwen ul li a.ms p{
+	color: #dcdcde;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right:5px;
+	height: 60px;
+	line-height: 21px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+/*end of 新闻列表*/
+
+/*集团活动*/
+#huodong{
+	margin-top: 30px;
+	width: 100%;
+}
+#huodong .huodong_a {
+	width: 100%;
+}
+#huodong .huodong_a li{
+	display: inline-block;
+	margin-right: 0.5%;
+	width: 23.5%;
+	margin-bottom: 10px;
+}
+#huodong .huodong_a li img{
+	width:100%;
+	height: 110px;
+}
+#huodong .huodong_a li:last-child{
+	margin: 0px;
+}
+#huodong .huodong_b{
+	width: 65%;
+	display: inline-block;
+	vertical-align: top;
+}
+#huodong .huodong_b li:before{
+	content: counter(newlist);
+	background-color: #444444;
+	padding: 5px 8px;
+	margin-right: 6px;
+	color: white;
+}
+#huodong .huodong_b li:first-child:before,#huodong .huodong_b li:nth-child(2):before,#huodong .huodong_b li:nth-child(3):before{
+	background-color: #3598db;
+}
+#huodong .huodong_b li:last-child:before{
+	padding: 0 3px;
+}
+#huodong .huodong_b li{
+	margin-top: 10px;
+	counter-increment: newlist;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 27px;
+	line-height: 27px;
+	color: #444444;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#huodong .huodong_b li:hover{
+	text-shadow: 2px 4px 3px dimgrey;	
+	cursor: pointer;
+}
+#huodong .huodong_c{
+	margin-left: 1%;
+	width: 32%;
+	height: 200px;
+	background: hotpink;
+	display: inline-block;
+	vertical-align: top;
+}
+#huodong .huodong_c li:first-child,#huodong .huodong_c li:first-child img{
+	width: 100%;
+	height: 205px;
+	margin-bottom: 10px;
+}
+#huodong .huodong_c li:last-child,#huodong .huodong_c li:last-child img{
+	width: 100%;
+	height: 150px;
+}
+/*end of 集团活动*/
+
+
+/*联盟博文*/
+#bowen .bowen_a{
+	
+}
+#bowen .bowen_a li{
+	display: inline-block;
+	width: 48%;
+	height: 144px;
+}
+#bowen .bowen_a li:first-child{
+	margin-right: 4%;
+}
+#bowen .bowen_a li a:last-child{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+#bowen .bowen_a li a img{
+	width: 100%;
+	height: 111px;
+}
+#bowen .bowen_b{
+	width: 100%;
+}
+#bowen .bowen_b li:before{
+	content: counter(newlist);
+	background-color: #444444;
+	padding: 0px 5px;
+	margin-right: 6px;
+	color: white;
+}
+#bowen .bowen_b li:first-child:before,#bowen .bowen_b li:nth-child(2):before,#bowen .bowen_b li:nth-child(3):before{
+	background-color: #3598db;
+}
+#bowen .bowen_b li{
+	font-size: 14px;
+	counter-increment: newlist;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 25px;
+	color: #444444;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#bowen .bowen_b li:hover{
+	cursor: pointer;
+	text-shadow: 2px 4px 3px dimgrey;
+}
+
+/*end of 联盟博文*/
+
+/*联盟招聘*/
+#zhaoping{
+	margin-top: 14px;
+}
+#zhaoping li:before{
+	content: counter(newlist);
+	background-color: #444444;
+	padding: 0px 5px;
+	margin-right: 6px;
+	color: white;
+}
+#zhaoping li:first-child:before,#zhaoping li:nth-child(2):before,#zhaoping li:nth-child(3):before{
+	background-color: #3598db;
+}
+#zhaoping li:last-child:before{
+	padding: 0 1px;
+}
+#zhaoping li{
+	font-size: 14px;
+	counter-increment: newlist;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 25px;
+	color: #444444;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#zhaoping li:hover{
+	text-shadow: 2px 4px 3px dimgrey;	
+	cursor: pointer;
+}
+/*end of 联盟招聘*/
+/*联系我们*/
+#lianxi{
+	margin-top: 20px;
+}
+#lianxi a img{
+	width: 100%;
+	height: 199px;
+}
+
+/*end of 联系我们*/
+/*联盟公司*/
+#lianmeng{
+	margin-top: 20px;
+}
+#lianmeng li{
+	height: 85px;
+	width: 98%;
+	margin-bottom: 10px;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#lianmeng li a{
+		color: #444444;
+}
+#lianmeng li h3{
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+}
+#lianmeng li img{
+	display: inline-block;
+	width: 40%;
+	vertical-align: middle;
+}
+#lianmeng li p{
+	display: inline-block;
+	width: 55%;
+	vertical-align: middle;
+	font-size: 12px;
+	font-size: 13px;
+	height: 56px;
+	overflow: hidden;
+	text-align: justify;
+}
+
+#lianmeng li:hover{
+	border: 1px solid #444444;
+	padding: 10px 5px;
+	border-radius: 5px;
+	box-shadow: 2px 4px 8px darkgray;
+	
+}
+/*end of 联盟公司*/
+
+/*footer*/
+#footer_wrapper{
+	height: 120px;
+	background-color: #3598db;
+	margin-top: 30px;
+	text-align: center;
+}
+#footer_wrapper ul li{
+	margin-top: 35px;
+	display: inline-block;
+	border-right: 1px solid white;
+	height: 14px;
+	line-height: 14px;
+	padding-right: 18px;
+	margin-left: 18px;
+	font-size: 14px;
+}
+#footer_wrapper ul li:last-child{
+	border: none;
+}
+#footer_wrapper ul li a{
+	color: white;	
+}
+#footer_wrapper p{
+	margin-top: 10px;
+	color: white;
+	font-size: 14px;
+}
+/*end of footer*/
+}
+/*
+ *
+ * 以下是屏幕宽度小于650px时的样式
+ * 以下是屏幕宽度小于650px时的样式
+ * 以下是屏幕宽度小于650px时的样式
+ * 以下是屏幕宽度小于650px时的样式
+ *  
+ * */
+
+@media only screen and (max-width: 649px) {
+	
+.contenter{
+	margin: 0px auto;
+	width: 96%;
+	min-width:360px;
+	padding: 0 3%;
+}
+.contenter .logo img{
+	width:97%;
+	height:120px;
+}
+.contenter .search{
+	text-align: right;
+	margin-bottom: 10px;
+	width: 94%;
+	padding: 0 3%;
+}
+.contenter .search input[type="text"] {
+    height: 30px;
+    width: 60%;
+    font-size: 16px;
+    padding-left: 10px;
+    background-color: #f3f3f3;
+    border: 1px solid gainsboro;
+    vertical-align: middle;
+    font-family: "微软雅黑";
+    margin-right: 0px;
+}
+.contenter .search input[type="text"]:focus{
+	background-color: #fff;
+}
+.contenter .search input[type="submit"]{
+	height: 32px;
+	background-color: #3598db;
+	border: 1px solid #3598db;
+	font-size: 16px;
+	padding:0 10px;
+	vertical-align: middle;
+	font-family: "微软雅黑";
+	cursor: pointer;
+}
+#nav{
+	background-color: #3598db;
+	height: 50px;
+}
+#nav nav li{
+	display: inline-block;
+	line-height: 50px;
+	font-size: 12px;
+	width: 15%;
+	padding: 0 1%;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+	text-align: center;
+	
+}
+#nav nav li.current,#nav nav li:hover{
+	background-color: #2f89c5;
+}
+#nav nav li a{
+	color: white;
+	display: block;
+}
+
+#main_wrapper{
+	margin-top: 23px;
+}
+#main_wrapper article{
+	width: 100%;
+}
+
+#main_wrapper aside{
+	margin-top: 23px;
+	width: 100%;
+	margin-left: 0px;
+}
+
+
+/*轮播图样式*/
+#lunbotu{
+	width: 100%;
+	box-shadow: 5px 5px 15px gray;
+}
+#lunbotu #tab { 
+	overflow:hidden; 
+	width:100%; 
+	height:238px; 
+	position:relative;
+	/*float:left;*/
+}
+#lunbotu #tab img{
+	width: 100%;
+	height: 318px;
+}
+#lunbotu #tab h1{
+	position: absolute;
+	width: 100%;
+	height: 45px;
+	bottom: 0px;
+	line-height: 45px;
+	background-color: black;
+	font-weight: lighter;
+	font-size: 14px;
+	color: white;
+	opacity: 0.75;
+}
+#lunbotu #tab h1 p{
+	float:left;
+	margin-left: 43px;
+	font-weight: bold;
+	font-size: 16px;
+}
+#lunbotu #tab h1 ul{
+	float: right;
+	margin-top: 10px;
+	margin-right: 43px;
+}
+#lunbotu #tab ul li{
+	cursor: pointer;
+	width: 24px;
+	height: 24px;
+	float: left;
+	background: url(../images/silde-nav.png) no-repeat;
+	color: white;
+	text-align: center;
+	line-height: 24px;	
+	margin-right: 2px;
+}
+
+#lunbotu #tab .li{
+	background: url(../images/silde-nav.png) 0 -24px no-repeat;
+	color: white;
+	text-align: center;
+	line-height: 24px;	
+}
+#lunbotu #tab .left{
+	width: 43px;
+	height: 273px;
+	line-height: 318px;
+	/*border: 1px solid ghostwhite;*/
+	background-color:black;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	opacity: 0.75;
+	font-size: 20px;
+	cursor: pointer;
+	color:#CCC;
+	text-align: center;
+}
+#lunbotu #tab .right{
+	width: 43px;
+	height: 273px;
+	line-height: 318px;
+	/*border: 1px solid ghostwhite;*/
+	background-color:black;
+	position: absolute;
+	top:0px;
+	right: 0px;
+	opacity:0.75;
+	font-size: 20px;
+	text-align:right;
+	cursor: pointer;
+	color:#CCC;
+	text-align: center;
+}
+/*end of 轮播图样式*/
+
+
+/*新闻列表*/
+#xinwen{
+	margin-top: 20px;
+}
+#xinwen ul li{
+	margin-bottom: 10px;
+	width: 100%;
+	height: 133px;
+}
+#xinwen ul li a.img{
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+#xinwen ul li a.img img{
+/*	width: 314px;*/
+	width: 100%;
+	height: 133px;
+}
+#xinwen ul li a.ms{
+	display: inline-block;
+	/*width: 295px;*/
+	width: 45%;
+	background: #3598db;
+	height: 100%;
+	padding-left: 5%;
+	color: white;
+	position: relative;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#xinwen ul li a.ms:hover{
+	background-color:cornflowerblue;
+}
+#xinwen ul li a.ms .sanjiao{
+	width: 25px;
+	height: 25px;
+	background-color:#3598db;
+	position: absolute;
+	left: -12px;
+	top: 16px;
+	/*兼容性设置*/
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+	
+}
+#xinwen ul li a.ms:hover .sanjiao{
+	background-color:cornflowerblue;
+	-moz-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+#xinwen ul li a.ms h3{
+	height: 35px;
+	border-bottom: 1px solid #c7c3c4;
+	margin-bottom: 10px;
+	line-height: 35px;
+	font-size: 16px;
+	overflow: hidden;
+}
+#xinwen ul li a.ms p{
+	color: #dcdcde;
+	font-weight: bold;
+	font-size: 15px;
+	margin-right:5px;
+	height: 60px;
+	line-height: 21px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+/*end of 新闻列表*/
+
+/*集团活动*/
+#huodong{
+	margin-top: 30px;
+	width: 100%;
+}
+#huodong .huodong_a {
+	width: 100%;
+}
+#huodong .huodong_a li{
+	display: inline-block;
+	margin-right: 0.5%;
+	width: 23.5%;
+	margin-bottom: 10px;
+}
+#huodong .huodong_a li img{
+	width:100%;
+	height: 110px;
+}
+#huodong .huodong_a li:last-child{
+	margin: 0px;
+}
+#huodong .huodong_b{
+	width: 65%;
+	display: inline-block;
+	vertical-align: top;
+}
+#huodong .huodong_b li:before{
+	content: counter(newlist);
+	background-color: #444444;
+	padding: 5px 8px;
+	margin-right: 6px;
+	color: white;
+}
+#huodong .huodong_b li:first-child:before,#huodong .huodong_b li:nth-child(2):before,#huodong .huodong_b li:nth-child(3):before{
+	background-color: #3598db;
+}
+#huodong .huodong_b li:last-child:before{
+	padding: 0 3px;
+}
+#huodong .huodong_b li{
+	margin-top: 10px;
+	counter-increment: newlist;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 27px;
+	line-height: 27px;
+	color: #444444;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#huodong .huodong_b li:hover{
+	text-shadow: 2px 4px 3px dimgrey;	
+	cursor: pointer;
+}
+#huodong .huodong_c{
+	margin-left: 1%;
+	width: 32%;
+	height: 200px;
+	background: hotpink;
+	display: inline-block;
+	vertical-align: top;
+}
+#huodong .huodong_c li:first-child,#huodong .huodong_c li:first-child img{
+	width: 100%;
+	height: 205px;
+	margin-bottom: 10px;
+}
+#huodong .huodong_c li:last-child,#huodong .huodong_c li:last-child img{
+	width: 100%;
+	height: 150px;
+}
+/*end of 集团活动*/
+
+
+/*联盟博文*/
+#bowen .bowen_a{
+	
+}
+#bowen .bowen_a li{
+	display: inline-block;
+	width: 48%;
+	height: 144px;
+}
+#bowen .bowen_a li:first-child{
+	margin-right: 4%;
+}
+#bowen .bowen_a li a:last-child{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-size: 14px;
+}
+#bowen .bowen_a li a img{
+	width: 100%;
+	height: 111px;
+}
+#bowen .bowen_b{
+	width: 100%;
+}
+#bowen .bowen_b li:before{
+	content: counter(newlist);
+	background-color: #444444;
+	padding: 0px 5px;
+	margin-right: 6px;
+	color: white;
+}
+#bowen .bowen_b li:first-child:before,#bowen .bowen_b li:nth-child(2):before,#bowen .bowen_b li:nth-child(3):before{
+	background-color: #3598db;
+}
+#bowen .bowen_b li{
+	font-size: 14px;
+	counter-increment: newlist;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 25px;
+	color: #444444;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#bowen .bowen_b li:hover{
+	cursor: pointer;
+	text-shadow: 2px 4px 3px dimgrey;
+}
+
+/*end of 联盟博文*/
+
+/*联盟招聘*/
+#zhaoping{
+	margin-top: 14px;
+}
+#zhaoping li:before{
+	content: counter(newlist);
+	background-color: #444444;
+	padding: 0px 5px;
+	margin-right: 6px;
+	color: white;
+}
+#zhaoping li:first-child:before,#zhaoping li:nth-child(2):before,#zhaoping li:nth-child(3):before{
+	background-color: #3598db;
+}
+#zhaoping li:last-child:before{
+	padding: 0 1px;
+}
+#zhaoping li{
+	font-size: 14px;
+	counter-increment: newlist;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	height: 25px;
+	color: #444444;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#zhaoping li:hover{
+	text-shadow: 2px 4px 3px dimgrey;	
+	cursor: pointer;
+}
+/*end of 联盟招聘*/
+/*联系我们*/
+#lianxi{
+	margin-top: 20px;
+}
+#lianxi a img{
+	width: 100%;
+	height: 199px;
+}
+
+/*end of 联系我们*/
+/*联盟公司*/
+#lianmeng{
+	margin-top: 20px;
+}
+#lianmeng li{
+	height: 85px;
+	width: 98%;
+	margin-bottom: 10px;
+	-moz-transition: all 1s linear;
+	-webkit-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	transition: all 1s linear;
+}
+#lianmeng li a{
+		color: #444444;
+}
+#lianmeng li h3{
+	height: 24px;
+	line-height: 24px;
+	font-size: 16px;
+}
+#lianmeng li img{
+	display: inline-block;
+	width: 40%;
+	vertical-align: middle;
+}
+#lianmeng li p{
+	display: inline-block;
+	width: 55%;
+	vertical-align: middle;
+	font-size: 12px;
+	font-size: 13px;
+	height: 56px;
+	overflow: hidden;
+	text-align: justify;
+}
+
+#lianmeng li:hover{
+	border: 1px solid #444444;
+	padding: 10px 5px;
+	border-radius: 5px;
+	box-shadow: 2px 4px 8px darkgray;
+	
+}
+/*end of 联盟公司*/
+
+/*footer*/
+#footer_wrapper{
+	height: 120px;
+	background-color: #3598db;
+	margin-top: 30px;
+	text-align: center;
+}
+#footer_wrapper ul li{
+	margin-top: 35px;
+	display: inline-block;
+	border-right: 1px solid white;
+	height: 14px;
+	line-height: 14px;
+	padding-right: 18px;
+	margin-left: 18px;
+	font-size: 14px;
+}
+#footer_wrapper ul li:last-child{
+	border: none;
+}
+#footer_wrapper ul li a{
+	color: white;	
+}
+#footer_wrapper p{
+	margin-top: 10px;
+	color: white;
+	font-size: 14px;
+}
+/*end of footer*/
+}
